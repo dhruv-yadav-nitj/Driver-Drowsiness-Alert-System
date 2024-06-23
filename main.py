@@ -5,13 +5,13 @@ from scipy.spatial.distance import euclidean as distance
 import pyttsx3
 import numpy as np
 
-# FACE DETECTOR
+# PRE-TRAINED FACE DETECTOR
 detector = dlib.get_frontal_face_detector()
 
 # TEXT-TO-SPEECH
 speaker = pyttsx3.init()
 
-# FACE-LANDMARKS DETECTOR
+# PRE-TRAINED FACE-LANDMARKS DETECTOR
 landmark_detector = dlib.shape_predictor('assets/shape_predictor_68_face_landmarks.dat')
 
 # ALERT DELAY
